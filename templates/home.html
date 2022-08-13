@@ -69,47 +69,14 @@
                 </div>
             </div>
         </div>
-        <div class="whyUs" style="display: none;">
-            <section class="splide" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="whyUsContent">
-                                <lottie-player src="{% static 'delivery.json' %}"
-                                    background="transparent" speed="1" style="width: 200px; height: 200px;" loop
-                                    autoplay></lottie-player>
-                                <p>On Time Delivery</p>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="whyUsContent" >
-                            <lottie-player src="{% static 'customersatisfaction.json' %}"
-                                background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay>
-                            </lottie-player>
-                            <p>On Time Delivery</p>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="whyUsContent">
+        
+<div class="whyUs">
+    <h2 id="click-to-action"><span>Want To Start A New Project With Us?
+</span>
+    <a href="/#contact" style="color:aqua; text-decoration: none;">Let's Start!</a></h2>
+    
+</div>
 
-                            <lottie-player src="{% static 'money.json' %}" background="transparent"
-                                speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
-                            <p>On Time Delivery</p>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="whyUsContent">
-
-                            <lottie-player src="{% static 'quality.json' %}"
-                                background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay>
-                            </lottie-player>
-                            <p>On Time Delivery</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
         <div class="ourExperties">
             <h2>Our experties</h2>
             <div class="expertiesContainer">
@@ -132,7 +99,48 @@
             </div>
         </div>
     </div>
+    <div class="whyUs">
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="whyUsContent">
+                            <lottie-player src="{% static 'delivery.json' %}" background="transparent" speed="1"
+                                style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                            <p>On Time Delivery</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="whyUsContent">
+                            <lottie-player src="{% static 'customersatisfaction.json' %}" background="transparent" speed="1"
+                                style="width: 200px; height: 200px;" loop autoplay>
+                            </lottie-player>
+                            <p>On Time Delivery</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="whyUsContent">
+    
+                            <lottie-player src="{% static 'money.json' %}" background="transparent" speed="1"
+                                style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                            <p>On Time Delivery</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="whyUsContent">
+    
+                            <lottie-player src="{% static 'quality.json' %}" background="transparent" speed="1"
+                                style="width: 200px; height: 200px;" loop autoplay>
+                            </lottie-player>
+                            <p>On Time Delivery</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </section>
+
 
 
 {% endblock %}

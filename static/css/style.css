@@ -157,7 +157,21 @@ nav ul>li a:hover {
 .workContainer>div:hover .illustaration{
     width: 80%;
 }
-
+#click-to-action{
+    font-family: Baumans;
+    font-size: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#click-to-action:nth-child(1){
+    color: rgb(195, 255, 0);
+}
+#click-to-action:nth-child(2) {
+    color: rgb(17, 255, 0);
+}
 .whyUs{
     width: 100vw;
     background-color: rgba(0, 0, 255, 0.753);
@@ -231,13 +245,21 @@ nav ul>li a:hover {
 #contact form>button:hover{
     border-radius: 5px;
 }
-#contact form>input {
+#contact form>input{
     height: 4rem;
     width:min(40rem, 98vw);
     margin: .3rem;
     padding: .6rem;
     border-radius: 100vw;
     stroke: none;
+}
+#message{
+    height: 4rem;
+        width: min(40rem, 98vw);
+        margin: .3rem;
+        padding: .6rem;
+        border-radius: 10px;
+        stroke: none;
 }
 #contact form>input:focus {
     background-color: lightblue;
@@ -261,7 +283,13 @@ footer div >h3{
     text-align: center;
     line-height: 5rem;
 }
-
+.contactA > i{
+    color: white;
+    font-size: 3rem;
+}
+.contactA>i:hover{
+    color: rgb(163, 161, 161);
+}
 /* responsiveness   */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 800px) {
