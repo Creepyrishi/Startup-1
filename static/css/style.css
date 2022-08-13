@@ -30,6 +30,7 @@ body{
     background-color: rgb(50, 50, 182);
     z-index: 99999;
 }
+/* slider  */
 
 
 /* nav  */
@@ -198,7 +199,7 @@ nav ul>li a:hover {
 
 .expertiesContainer > div{
     height: 30rem;
-    width: 30rem;
+    width: min(30rem, 94vw);
     display: flex;
     flex-direction: column;
     justify-content: center;

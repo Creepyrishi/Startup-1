@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA</title>
-    <link rel="shortcut icon"
-        href="https://media.discordapp.net/attachments/989030294952747018/1007993946548482048/20220813_183228.png"
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/989030294952747018/1007993946548482048/20220813_183228.png"
         type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
 
 
 
@@ -65,7 +68,7 @@
             <a href="/" class="navLogo"><img id="navLogo" src="https://media.discordapp.net/attachments/989030294952747018/1007993946548482048/20220813_183228.png
 " alt="logo"></a>
             <ul class="navUL" onScreen='false'>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="/" class="active">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <!-- <li><a href="#">Portfolio</a></li> -->
                 <li><a href="/about">About us</a></li>
@@ -83,7 +86,7 @@
 
     <section id="contact">
         <h2>Get In Touch With Us</h2>
-        <form action="/connect/message" method="post">
+        <form action="/connect/message" method="post" data-aos="slide-up">
             {% csrf_token %}
             <input type="text" name="first-name" id="firstName" placeholder="First Name*" required>
             <input type="text" name="last-name" id="lastName" placeholder="Last Name*" required>
@@ -137,7 +140,15 @@
             splide.mount();
         });
     </script>
-
+     
+    <!-- scroll animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 700,
+        });
+    </script>
 
     <script>
         window.addEventListener("load", () => {

@@ -11,3 +11,10 @@ navToggle.addEventListener('click', () => {
         navToggle.src = "static/img/ham.svg";
     }
 })
+
+
+// redirects
+function selfRedirect(path){
+    location.replace(path);
+
+}
