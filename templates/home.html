@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section id="home" class="introContainer" >
+    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_320k6p1d.json" background="transparent" speed="1"
+        loop autoplay></lottie-player>
+
+    <div class="intro" >
+        <h1>Alpha Accounting & Advisory</h1>
+        <p>Helping Buiness To Grow By Providing Excellent Accounting, Tax & Advisory Services. </p>
+        <a href="#contact">Submit →</a>
+    </div>
+    </div>
+</section>
+
+<section id="services">
+    <h1>OUR SERVICES</h1>
+    <div>
+        <div class="whatWeDo" >
+            <h2>What we do?</h2>
+            <div class="workContainer">
+                <div>
+                    <img src="{% static '/img/buisness.svg' %}" loading="lazy" alt=""
+                        class="illustaration">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" class="illustaration"
+                        loading="lazy">
+                    <p>Business Registration</p>
+                    <a href="#">Read →</a>
+                </div>
+            </div>
+        </div>
+        <div class="whyUs" style="display: none;">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="whyUsContent">
+                                <lottie-player src="{% static 'delivery.json' %}"
+                                    background="transparent" speed="1" style="width: 200px; height: 200px;" loop
+                                    autoplay></lottie-player>
+                                <p>On Time Delivery</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="whyUsContent" >
+                            <lottie-player src="{% static 'customersatisfaction.json' %}"
+                                background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay>
+                            </lottie-player>
+                            <p>On Time Delivery</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="whyUsContent">
+
+                            <lottie-player src="{% static 'money.json' %}" background="transparent"
+                                speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                            <p>On Time Delivery</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="whyUsContent">
+
+                            <lottie-player src="{% static 'quality.json' %}"
+                                background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay>
+                            </lottie-player>
+                            <p>On Time Delivery</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="ourExperties">
+            <h2>Our experties</h2>
+            <div class="expertiesContainer">
+                <div>
+                    <img src="{% static 'img/buisness.svg' %}" alt="" loading="lazy">
+                    <p>Business Registration</p>
+                </div>
+                <div>
+                    <img src="{% static 'img/finance.svg' %}" alt="" loading="lazy">
+                    <p>Accounting & Consulting</p>
+                </div>
+                <div>
+                    <img src="{% static 'img/revenue.svg' %}" alt="" loading="lazy">
+                    <p>Chart of Accounts</p>
+                </div>
+                <div>
+                    <img src="{% static 'img/plan.svg' %}" alt="" loading="lazy">
+                    <p>Business Plans</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,320 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap'); /* for body text Baloo 2*/
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');/* for nav text Baumans*/
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');/* for headings text MuseoModerno*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgba(58, 58, 192, 0.849);
+    background-image: linear-gradient(to right, rgba(58, 58, 192, 0.849), rgb(58, 192, 89));
+}
+/* loading  */
+#loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgb(50, 50, 182);
+    z-index: 99999;
+}
+
+
+/* nav  */
+nav{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+#navLogo{
+    height: 5rem;
+    margin: .3rem;
+}
+nav ul{
+    margin-right: 1rem;
+}
+nav ul > li{
+    display: inline;
+}
+nav ul>li a{
+    font-size: 2rem;
+    font-family: Baumans;
+    padding: 0 .7rem;
+    margin: .3rem;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+nav ul>li a:hover {
+    cursor: pointer;
+    color: rgb(0, 100, 0);
+}
+.active{
+    color: rgb(7, 239, 7);
+}
+#hamburger{
+    width: 3rem;
+    color: white;
+    aspect-ratio: 1;
+    margin-right: 2rem;
+    display:none;
+    position: fixed;
+    right: 0;
+}
+
+
+/* intro */
+.introContainer{
+    display: flex;
+    align-items: center;
+}
+.introContainer > lottie-player{
+    width: 100vh;
+    height: auto;
+}
+.introContainer .intro{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.introContainer .intro > h1 {
+    font-family: MuseoModerno;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+.introContainer .intro>p {
+    font-family: 'Baloo 2';
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.introContainer .intro>a {
+    font-family: MuseoModerno;
+    font-size: 1.5rem;
+    padding: 1rem 1.6rem;
+    border-radius: 100vw;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* services section  */
+
+#services > h1 {
+    font-family: MuseoModerno;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    line-height: 10rem;
+}
+#services > div h2{
+    font-family: Baumans;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    line-height: 8rem;
+}
+
+.expertiesContainer, .workContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.workContainer > div{
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    border-radius: 6px;
+    background-color: rgba(208, 219, 229, 0.2);
+    transition: background-color 100ms ease-in-out;
+}
+.workContainer>div > img{
+    width: 60%;
+    transition:width 100ms ease-in-out;
+}
+.workContainer>div:hover .illustaration{
+    width: 80%;
+}
+
+.whyUs{
+    width: 100vw;
+    background-color: rgba(0, 0, 255, 0.753);
+    backdrop-filter: blur(1.5rem);
+    margin: 2rem 0;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyUsContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.whyUsContent>p{
+    font-family: MuseoModerno;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 7rem;
+}
+
+.expertiesContainer > div{
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: rgba(208, 219, 229, 0.2);
+    transition: background-color 200ms ease-in-out;
+}
+
+.expertiesContainer>div >img{
+    width: 60%
+}
+.expertiesContainer>div>p ,.workContainer>div *{
+    font-family: MuseoModerno;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+/* contact */
+#contact>h2{
+    font-family: Baumans;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    line-height: 8rem;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 min(10rem, 5vw);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#contact form>button {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 50vw;
+    width: 10rem;
+    transition: border-radius 2000ms ease-in-out 20ms;
+    margin: 9px auto;
+}
+#contact form>button:hover{
+    border-radius: 5px;
+}
+#contact form>input {
+    height: 4rem;
+    width:min(40rem, 98vw);
+    margin: .3rem;
+    padding: .6rem;
+    border-radius: 100vw;
+    stroke: none;
+}
+#contact form>input:focus {
+    background-color: lightblue;
+}
+/* footer */
+footer{
+    color: rgb(0, 0, 0);
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#map{
+    border-radius: 6px;
+    padding: .5rem;
+}
+footer div >h3{
+    font-family: Baumans;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+}
+
+/* responsiveness   */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 8px;
+    }
+
+    #hamburger {
+        display: block;
+        z-index: 999;
+    }
+
+    nav ul {
+        background-color: rgba(0, 0, 255, 0.2);
+        backdrop-filter: blur(1rem);
+        inset: 0 0 0 100vw;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: min(40vh, 6rem) 2rem;
+        overflow-x: hidden;
+        transition: inset 150ms linear;
+        z-index: 3;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin: 6px 0;
+    }
+
+    .navUL[onScreen='true'] {
+        inset: 0 0 0 40vw;
+    }
+
+    /* intro  */
+    .introContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .introContainer>lottie-player {
+            width: 50vh;
+            height: auto;
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
