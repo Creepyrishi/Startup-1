@@ -7,27 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA</title>
-
-    <link rel="stylesheet" href="{% static 'css/style.css' %}
-">
+    <link rel="shortcut icon"
+        href="https://media.discordapp.net/attachments/989030294952747018/1007993946548482048/20220813_183228.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
 
-<body >
-    <div id="loading"  id="particles-js">
-        <lottie-player src="{% static 'loading.json' %}" background="transparent"
-            speed="2" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+
+
+<body>
+<!-- messenger  -->
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "112227711586403");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v14.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- messenger end  -->
+
+
+
+
+    <div id="loading" id="particles-js">
+        <lottie-player src="{% static 'loading.json' %}" background="transparent" speed="2"
+            style="width: 200px; height: 200px;" loop autoplay></lottie-player>
     </div>
     <header>
         <nav id="navbar">
-            <a href="/" class="navLogo"><img id="navLogo" src="{% static 'img/logo.png' %}
+            <a href="/" class="navLogo"><img id="navLogo" src="https://media.discordapp.net/attachments/989030294952747018/1007993946548482048/20220813_183228.png
 " alt="logo"></a>
             <ul class="navUL" onScreen='false'>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <!-- <li><a href="#">Portfolio</a></li> -->
-                <li><a href="#">About us</a></li>
+                <li><a href="/about">About us</a></li>
                 <!-- <li><a href="#">Blog</a></li> -->
                 <li><a href="#contact">Contact us</a></li>
             </ul>
@@ -48,7 +89,8 @@
             <input type="text" name="last-name" id="lastName" placeholder="Last Name*" required>
             <input type="email" name="email" id="email" placeholder="Email*" required>
             <input type="number" name="Phone-number" id="number" placeholder="Phone Number*" required>
-            <textarea name="Message" id="message" cols="30" id="message" rows="10" placeholder="Message*" required></textarea>
+            <textarea name="Message" id="message" cols="30" id="message" rows="10" placeholder="Message*"
+                required></textarea>
             <button type="submit">Submit</button>
         </form>
     </section>
@@ -61,7 +103,8 @@
                 <a class="contactA" target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
                 <a class="contactA" target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
                 <a class="contactA" target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
-                <a class="contactA" target="_blank" href="mailto: aaa.advisory.alpha@gmail.com"><i class="fa-solid fa-at"></i></a>
+                <a class="contactA" target="_blank" href="mailto: aaa.advisory.alpha@gmail.com"><i
+                        class="fa-solid fa-at"></i></a>
                 <a class="contactA" target="_blank" href="tel:+9779843319464"><i class="fa-solid fa-phone"></i></a>
             </div>
         </div>
@@ -94,7 +137,7 @@
             splide.mount();
         });
     </script>
-    
+
 
     <script>
         window.addEventListener("load", () => {
