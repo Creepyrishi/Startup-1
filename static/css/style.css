@@ -306,6 +306,13 @@ footer div >h3{
             width: 50vh;
             height: auto;
         }
+    footer {
+        flex-direction: column;
+    }
+    #map{
+        aspect-ratio: 1;
+        width: 50vw;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
