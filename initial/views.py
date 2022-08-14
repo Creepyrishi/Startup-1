@@ -10,7 +10,7 @@ def initial(request):
         dat = data()
         dat.id = item['id']
         dat.title = item['fields']['Title']
-        dat.description = item['fields']['Description']
+        dat.thumbnail = item['fields']['Thumbnail']
         services.append(dat)
 
     return render(request, "home.html", {'services' : services})
@@ -26,7 +26,7 @@ def service(request, id):
             dat = data()
             dat.id = item['id']
             dat.title = item['fields']['Title']
-
+            dat.thumbnail = item['fields']['Thumbnail']
             
             dat.description = f'<!DOCTYPE html><html lang="en" style="font-size:10px; color:white"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>{item["fields"]["Description"]}</body></html>'
             

@@ -1,3 +1,6 @@
+const baseUrl = window.location.origin;
+const host = window.location.host
+
 const navToggle = document.querySelector("#hamburger")
 const navList = document.querySelector(".navUL")
 
@@ -5,10 +8,10 @@ const navList = document.querySelector(".navUL")
 navToggle.addEventListener('click', () => {
     if (navList.getAttribute("onScreen") === "false"){
         navList.setAttribute("onScreen", 'true');
-        navToggle.src = "static/img/hamcross.svg";
+        navToggle.src = baseUrl + "/static/img/hamcross.svg";
     }else{
         navList.setAttribute("onScreen", 'false');
-        navToggle.src = "static/img/ham.svg";
+        navToggle.src = baseUrl + "/static/img/ham.svg";
     }
 })
 

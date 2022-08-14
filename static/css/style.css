@@ -16,8 +16,11 @@ html{
     font-size: 10px;
 }
 body{
-    background-color: rgba(58, 58, 192, 0.849);
-    background-image: linear-gradient(to right, rgba(58, 58, 192, 0.849), rgb(58, 192, 89));
+    background-color: rgba(0, 0, 0, 0.87);
+    background-image: linear-gradient(to right, rgb(40, 40, 40), rgb(28, 28, 28));
+}
+h1{
+    text-shadow: 0px 7px 9px rgba(0, 0, 0, 1);
 }
 /* loading  */
 #loading{
@@ -27,7 +30,7 @@ body{
     height: 100vh;
     width: 100vw;
     position: fixed;
-    background-color: rgb(50, 50, 182);
+    background-color: rgb(0, 0, 0);
     z-index: 99999;
 }
 /* take to top */
@@ -46,7 +49,13 @@ body{
     font-size: 2rem;
     color: white;
 }
-
+/* particles-js */
+#particles-js{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -9999;
+}
 
 
 /* nav  */
@@ -100,8 +109,9 @@ nav ul>li a:hover {
     align-items: center;
 }
 .introContainer > lottie-player{
-    width: 100vh;
+    width: 75vh;
     height: auto;
+    transform: scaleX(-1);
 }
 .introContainer .intro{
     height: auto;
@@ -112,6 +122,7 @@ nav ul>li a:hover {
 }
 .introContainer .intro > h1 {
     font-family: MuseoModerno;
+    text-shadow: 0px 7px 9px rgba(0, 0, 0, 1);
     font-size: 4rem;
     color: white;
     text-align: center;
@@ -130,8 +141,11 @@ nav ul>li a:hover {
     background-color: black;
     color: white;
     text-decoration: none;
+    transition: background-color 100ms ease-in-out;
 }
-
+.introContainer .intro>a:hover{
+    background-color: rgb(34, 0, 255);
+}
 /* services section  */
 
 #services > h1 {
@@ -165,14 +179,17 @@ nav ul>li a:hover {
     margin: 2px;
     border-radius: 6px;
     background-color: rgba(208, 219, 229, 0.2);
-    transition: background-color 100ms ease-in-out;
+    transition: background-color 100ms ease-in-out ;
+    cursor: pointer;
 }
 .workContainer>div > img{
-    width: 60%;
-    transition:width 100ms ease-in-out;
+    width: 70%;
+    transition:width 100ms ease-in-out, border-radius 100ms ease-in-out !important;
+    border-radius: 4px;
 }
 .workContainer>div:hover .illustaration{
-    width: 80%;
+    width: calc(70% + min(1rem, 5px));
+    border-radius: 13px;
 }
 #click-to-action{
     font-family: Baumans;
@@ -191,7 +208,7 @@ nav ul>li a:hover {
 }
 .whyUs{
     width: 100vw;
-    background-color: rgba(0, 0, 255, 0.753);
+    background-color: rgba(0, 0, 0, 1);
     backdrop-filter: blur(1.5rem);
     margin: 2rem 0;
     padding: 1.6rem;
@@ -215,7 +232,7 @@ nav ul>li a:hover {
 
 .expertiesContainer > div{
     height: 30rem;
-    width: max(30rem, 94vw);
+    width: min(30rem, 94vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,11 +273,13 @@ nav ul>li a:hover {
     color: white;
     border-radius: 50vw;
     width: 10rem;
-    transition: border-radius 2000ms ease-in-out 20ms;
+    transition: border-radius 2000ms ease-in-out 20ms, background-color 200ms ease-in-out 20ms;
     margin: 9px auto;
+    cursor: pointer;
 }
 #contact form>button:hover{
     border-radius: 5px;
+    background-color: rgb(34, 0, 255);
 }
 #contact form>input{
     height: 4rem;

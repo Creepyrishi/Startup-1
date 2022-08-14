@@ -59,12 +59,13 @@
 
     <!-- take to top -->
     <!-- <button id="takeToTop" data-aos="slide-up"><i class="fa-solid fa-arrow-up-long"></i></button> -->
-
- 
-    <div id="loading" id="particles-js">
+<!-- loading -->
+    <div id="loading" >
         <lottie-player src="{% static 'loading.json' %}" background="transparent" speed="2"
             style="width: 200px; height: 200px;" loop autoplay></lottie-player>
     </div>
+<!-- particel js -->
+    <div id="particles-js"></div>
     <header>
         <nav id="navbar">
             <a href="/" class="navLogo"><img id="navLogo" src="https://media.discordapp.net/attachments/989030294952747018/1007993946548482048/20220813_183228.png
@@ -124,8 +125,12 @@
 
     <!-- lotiee animaition  -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- local ja  -->
+    <!-- local js  -->
     <script src="{% static 'js/main.js' %}"></script>
+    <!-- particle js -->
+    <script src="{% static 'js/particles.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
     <!-- google trnslator  -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
