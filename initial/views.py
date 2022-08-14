@@ -28,7 +28,7 @@ def service(request, id):
             dat.title = item['fields']['Title']
 
             
-            dat.description = '<!DOCTYPE html><html lang="en" style="font-size:10px; color:white"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");</style></head><body style="font-family:Poppins, sans-serif; color:white">' +{item["fields"]["Description"]}+ '</body></html>'
+            dat.description = '<!DOCTYPE html><html lang="en" style="font-size:10px; color:white"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body style=" color:white">' +{item["fields"]["Description"]}+ '</body></html>'
             
             return render(request, "service.html", {'dat':dat})
 
