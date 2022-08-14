@@ -53,7 +53,7 @@ h1{
 #particles-js{
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     z-index: -9999;
 }
 
