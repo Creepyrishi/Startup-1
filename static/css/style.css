@@ -30,7 +30,23 @@ body{
     background-color: rgb(50, 50, 182);
     z-index: 99999;
 }
-/* slider  */
+/* take to top */
+#takeToTop{
+    aspect-ratio: 1;
+    width: 4rem;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#takeToTop i {
+    font-size: 2rem;
+    color: white;
+}
+
 
 
 /* nav  */

@@ -3,7 +3,8 @@
 
 {% block content %}
 
-    <h2>{{dat.title}}</h2>
-    <p>{{ dat.description }}</p>
+    <h2 style="text-align: center; margin: 1rem; font-size: 3.5rem; font-family: MuseoModerno; color: white;">{{dat.title}}</h2>
+    
+    {{ dat.description | safe }}
 
 {% endblock %}
