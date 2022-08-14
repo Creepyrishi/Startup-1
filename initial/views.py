@@ -33,7 +33,8 @@ def service(request, id):
             return render(request, "service.html", {'dat':dat})
 
     else:
-        return HttpResponse("<h2>DATA NOT FOUND</h2>")
+        return render(request, "message.html", {'message': 'DATA NOT FOUND'})
+
 
     
     

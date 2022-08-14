@@ -13,7 +13,7 @@ def connect(request):
         message = request.POST.get("Message")
         
         # adding message in airtable 
-        if addMessage(name=fullName, phone=phoneNumber, mail=email , message= message):
-            return HttpResponse(fullName + " your request has been sucess fully submitted")
+        if addMessage(name=fullName, phone=phoneNumber, mail=email , message=message):
+            return render(request, "message.html", {'message': f'{fullName} your request has been sucess fully submitted'})
         else:
-            return HttpResponse(fullName + " something went wrong")
+            return render(request, "message.html", {'message': f'{fullName} something went wrong'})
