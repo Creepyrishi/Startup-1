@@ -26,7 +26,9 @@ def service(request, id):
             dat = data()
             dat.id = item['id']
             dat.title = item['fields']['Title']
-            dat.description = item['fields']['Description']
+
+            
+            dat.description = f' <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>{item["fields"]["Description"]}</body></html>'
             
             return render(request, "service.html", {'dat':dat})
 
