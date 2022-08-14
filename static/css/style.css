@@ -109,7 +109,7 @@ nav ul>li a:hover {
     align-items: center;
 }
 .introContainer > lottie-player{
-    width: 75vh;
+    width: 65vh;
     height: auto;
     transform: scaleX(-1);
 }
@@ -170,8 +170,8 @@ nav ul>li a:hover {
     flex-wrap: wrap;
 }
 .workContainer > div{
-    height: 30rem;
-    width: 30rem;
+    width: min(35rem, 96vw);
+    aspect-ratio: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,8 +231,8 @@ nav ul>li a:hover {
 }
 
 .expertiesContainer > div{
-    height: 30rem;
-    width: min(30rem, 94vw);
+    aspect-ratio: 1;
+    width: min(35rem, 96vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,10 +336,11 @@ footer div >h3{
     #hamburger {
         display: block;
         z-index: 999;
+        color: white;
     }
 
     nav ul {
-        background-color: rgba(0, 0, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(1rem);
         inset: 0 0 0 100vw;
         position: fixed;
