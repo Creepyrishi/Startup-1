@@ -1,9 +1,6 @@
 import os
 from pyairtable import Api, Base, Table
 
-
-MESSAGE_BASEID ="appDOHob0s9g3sw8d"
-AIRTABLE_API = 'keyIgDCfhEZJMHEVf'
 MESSAGE_BASEID = os.environ.get("MESSAGE_BASEID")
 AIRTABLE_API = os.environ.get("AIRTABLE_API")
 
